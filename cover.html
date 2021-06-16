@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.83.1">
-    <title>SBD Cover Page</title>
+    <title>Welcome Page</title>
 
 </head>
 
@@ -17,6 +17,13 @@
 
      
     <style>
+      body {
+              background-image: url('oil2.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-color: transparent;
+              background-size: 100% 100%;
+            }
        .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -34,28 +41,55 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="cover1.css" rel="stylesheet">
+    <link href="cover2.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0"><b><em>SBD</em></b></h3>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="cover.html"><b>SBD</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home/home.html">Home</a>
+           </li>
+             <li class="nav-item">
+               <a class="nav-link" href="album/album.html">Products</a>
+             </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="about/about.html">Contact</a>
+                </li>
+              
+          </ul>
+            <ul class="navbar-nav me-text-right mb-2 mb-md-0">
+        <form class="d-flex">
+          <!--input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"-->
+          <li class="nav-item">
+               <a class="nav-link" href="help/help.txt">Help</a>
+             </li>
+           </u1>
+        </form>
+       </div>
+     </div>
+    </nav>
+      <div>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="home/home.html">Home</a>
-        <a class="nav-link" href="album/album.html">Products</a>
-        <a class="nav-link" href="about/about.html">About</a>
-      </nav>
+         </nav>
     </div>
   </header>
 
   <main class="px-3">
-    <h1>Sri BalaG Oil, Dhall & Flour Mill</h1>
-    <p class="lead">Here we make a fresh and pure food products in a traditional way to ensure healthy foods</p>
-    <p class="lead">
-      <a href="home/home.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">See more</a>
-    </p>
+    <!---h2> Welcome Dear User's</h2-->
+      <h1 style="color:#242b2f;"><b>Sri BalaG Food Products</b></h1>
+          <p  style="color:#333;" class="lead"> <b> A Quality Product of Sri Balaji OIl, Dhall & Flour millHere we make a fresh and pure food products in a traditional way to ensure healthy foods, click the below button to redirect our home page for viewing our products </b> </p>
+             <p class="lead">
+               <a href="home/home.html" class="btn btn-lg btn-secondary fw-bold border-blue bg-white">See more</a>
+           </p>
   </main>
 
   <footer class="mt-auto text-white-50">
