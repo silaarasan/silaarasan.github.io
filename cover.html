@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" >
+<html lang="en" class="h-100" >
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
     <style>
       body {
               background-image: url('oil3.jpg');
-              background-repeat: -y;
+              background-repeat: no-repeat ;
               background-attachment: fixed;
               background-color: transparent;
              background-size: 100% 100%;
@@ -42,14 +42,44 @@
     
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
+
+
+
+<div id="content">
+    <div class="desktop">
+        <!--
+            some content and markups here. by default this is loaded in desktop
+        -->
+    </div>
+
+    <div class="mobile_device_380px">
+        <!-- content and some markups for mobile -->
+    </div>
+
+    <div class="mobile_device_480px">
+        <!-- content and some markups for mobile -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+  <body class="d-flex h-100 text-center text-white bg-dark"  >
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="cover.html"><b><em>SBD</em></b></a>
+        <a class="navbar-brand" href="../cover.html"><img src="logo_new1.jpg" alt="gundu ulundu" style="float:right;width:32px;height:32px;" ></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
             <span class="navbar-toggler-icon"></span>
           </button> 
@@ -59,19 +89,23 @@
               <a class="nav-link active" aria-current="page" href="home/home.html"><em>Home</em></a>
            </li>
              <li class="nav-item">
-               <a class="nav-link" href="products/products.html"><em>Products</em></a>
+               <a class="nav-link active" href="products/products.html"><em>Products</em></a>
              </li>
                <li class="nav-item">
-                 <a class="nav-link" href="about/about.html"><em>About</em></a>
+                 <a class="nav-link active " href="about/about.html"><em>About</em></a>
                 </li>
               
           </ul>
             <ul class="navbar-nav me-text-right mb-2 mb-md-0">
         <form class="d-flex">
           <!--input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"-->
+          <li class="navbar-nav me-auto mb-2 mb-md-0">
+                 <a class="nav-link" href="about/about.html"><em>Blog</em></a>
+                </li>
           <li class="nav-item">
                <a class="nav-link" href="help/help.txt">Help</a>
              </li>
+             
            </u1>
         </form>
        </div>
@@ -84,16 +118,18 @@
   </header>
 
   <main class="px-6">
+    <a class="navbar-brand" href="/cover.html"><img src="logo_new1.jpg" alt="" style="float:center;width:200px;height:200;" ></a> 
     <!---h2> Welcome Dear User's</h2-->
-      <h1 style="color:#242b2f;"><em><b>Sri BalaG Food Products</b></em></h1>
-          <p  style="color:#333;" class="lead"> <b><em> A Quality Production unit of Sri Balaji Oil, Dhall & Flour mill, Where we make a hygienic food products in a traditional way to ensure healthy life of our beloved customers. <br> Click the below link to witness the sign of purity food products. </em></b> </p>
+      <h1 style="color:#000;"><em><b>Sri BalaG Food Products</b></em></h1>
+          <p  style="color:#000;" class="lead"><b> <em> <b> A Quality Production unit of Sri Balaji Oil, Dal & Flour mill, Where we make a hygienic food products in a traditional way to ensure healthy life of our beloved customers. <br> Click the below link to witness the sign of purity food products. </b></em> </b> </p>
+          <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
              <p class="lead">
                <a href="home/home.html" class="btn btn-lg btn-secondary fw-bold border-blue bg-white">See more</a>
            </p>
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p style="color:#333;"> &copy; 2021 <a href="https://www.instagram.com/its_me_alis_nasara/" class="text-body">Silambarasan_Elumalai</a> <br>All rights reserved</br> </p>
+    <p style="color:#333;"> &copy; 2021 <a href="https://www.instagram.com/its_me_alis_nasara/" target="_blank" class="text-body">Silambarasan_Elumalai</a> <br>All rights reserved</br> </p>
   </footer>
 </div>
 
