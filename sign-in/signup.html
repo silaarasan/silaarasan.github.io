@@ -1,0 +1,160 @@
+<?php
+include 'library/auth.php';
+
+if(isset($_COOKIE['username']) and isset($_COOKIE['token'])){
+  $username = $_COOKIE['username'];
+  $token = $_COOKIE['token'];
+
+  if(verify_session($username, $token)){
+    header("Location: /home.php");
+  }
+}
+
+if(isset($_POST['username']) and isset($_POST['password'])){
+  if(do_login($_POST['username'], $_POST['password'])){
+    header("Location: /home.php");
+  } else {
+    $flag = 0;
+  }
+} else {
+  $flag = -1;
+}
+?>
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Signin </title>
+    <link rel="shortcut icon" href="../img/logo.jpg">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+
+ <body class="d-flex h-100 text-center text-white bg-dark"  >
+
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <!--nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"-->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-dark fixed-top" style="background-color:#162d44 !important;">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../cover.html"><img src="../img/logo.jpg" alt="SBD" style="float:right;width:32px;height:32px;" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../home/home.html"><em>Home</em></a>
+           </li>
+             <li class="nav-item">
+               <a class="nav-link disabled" href="../products/products.html"><em>Products</em></a>
+             </li>
+               <li class="nav-item">
+                <a class="nav-link active " href="../about/about.html"><em>About</em></a>
+               </li>         
+          </ul>
+            <ul class="navbar-nav me-text-right mb-2 mb-md-0">
+        <form class="d-flex">
+
+          <li class="nav-item">
+                <a class="nav-link active " href="../about/about.html"><em>SignUp</em></a>
+               </li> 
+          
+          <!--input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"-->
+          <li class="navbar-nav me-auto mb-2 mb-md-0">
+                
+             
+           </u1>
+        </form>
+       </div>
+     </div>
+    </nav>
+      <div>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+         </nav>
+    </div>
+  </header>
+
+
+
+
+    
+<main class="form-signin">
+  <form>
+    
+   
+
+    <?php
+    if($flag == 0) {
+      ?>
+      <div class="alert alert-danger" role="alert">
+        Your username or password did not match.
+        <?php
+        if($flag != -1){
+          include '_show_up.php';
+        }
+        ?>
+      </div>
+      <?php
+    } else if(isset($_GET['signup'])){
+      if($_GET['signup'] == 'success'){
+      ?>
+        <div class="alert alert-success" role="alert">
+        Signup success, you can login now!
+        </div>
+      <?php
+      }
+    }
+    ?>
+    <img class="mb-4" src="../img/logo.jpg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputusername" class="sr-only"></label>
+    <input name="username" type="text" id="inputusername" class="form-control" placeholder="Username" required autofocus>
+    <label for="inputPassword" class="sr-only"></label>
+    <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <br>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" style="align-content: center;">Sign in</button>
+    <a href="/signup.php"> <br> <br>No account? Signup :) </br> </br></a>
+    <p class="mt-5 mb-3 text-muted">&copy; 2021 - All Rights Reserved</p>
+  </form>
+</main>
+
+
+    
+  </body>
+</html>

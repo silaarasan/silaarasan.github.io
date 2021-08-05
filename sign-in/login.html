@@ -1,34 +1,23 @@
 <!doctype html>
-<html lang="en" class="h-100" >
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.83.1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome Page </title>
-    <link rel="shortcut icon" href="../Project/img/logo.jpg">
+    <title>Signin Template</title>
+    <link rel="shortcut icon" href="../img/logo.jpg">
 
-</head>
-
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
 
     
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-     
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-      body {
-              background-image: url('../Project/img/index.jpg');
-              background-repeat: no-repeat ;
-              background-attachment: fixed;
-              background-color: transparent;
-             background-size: 100% 100%;
-            }
-       .bd-placeholder-img {
+      .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
@@ -41,38 +30,15 @@
           font-size: 3.5rem;
         }
       }
-      h1 {
-  text-align: center;
-}
-
     </style>
 
     
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-
-
-
-<div id="content">
-    <div class="desktop">
-        <!--
-            some content and markups here. by default this is loaded in desktop
-        -->
-    </div>
-
-    <div class="mobile_device_380px">
-        <!-- content and some markups for mobile -->
-    </div>
-
-    <div class="mobile_device_480px">
-        <!-- content and some markups for mobile -->
-    </div>
-</div>
-
-
-
+    <link href="signin.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark"  >
+  <body class="text-center">
+
+ <body class="d-flex h-100 text-center text-white bg-dark"  >
 
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -81,7 +47,7 @@
     <nav class="navbar navbar-expand-md navbar-dark navbar-dark fixed-top" style="background-color:#162d44 !important;">
 
       <div class="container-fluid">
-        <a class="navbar-brand" href="/cover.html"><img src="../Project/img/logo.jpg" alt="SBD" style="float:right;width:32px;height:32px;" ></a>
+        <a class="navbar-brand" href="/cover.html"><img src="../img/logo.jpg" alt="SBD" style="float:right;width:32px;height:32px;" ></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
             <span class="navbar-toggler-icon"></span>
           </button> 
@@ -102,9 +68,6 @@
           
           <!--input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"-->
           <li class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-                <a class="nav-link active " href="sign-in/signup.html"><em>Signup / Login</em></a>
-               </li>
                  <a class="nav-link" href="https://www.facebook.com/sila.appu/" target="_blank"><em><i class="fa fa-facebook" style="font-size:24px"></i></em></a>
                 </li>
           <li class="nav-item">
@@ -125,22 +88,33 @@
     </div>
   </header>
 
-  <main class="px-6">
-    <a class="navbar-brand" href="/cover.html"><img src="../Project/img/logo.jpg" alt="SBD" style="float:center;width:200px;height:200;" ></a> 
-    <!---h2> Welcome Dear User's</h2-->
-      <h1 style="color:#162d44 !important;"><em><b> baLaji. </b></em></h1>
-          <p  style="color:#162d44 !important;" class="lead"><b> <em> <b> A Quality Production unit of Sri Balaji Oil, Dal & Flour mill, Where we make a hygienic food products in a traditional way to ensure healthy life of our beloved customers. <br> Click the below link to witness the sign of purity food products. </b></em> </b> </p>
-          <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
-             <p class="lead">
-               <a href="home/home.html" class="btn btn-lg btn-secondary fw-bold border-blue bg-white">See more</a>
-           </p>
-  </main>
 
-  <footer class="mt-auto text-white-50">
-    <p style="color:#000;"> &copy; 2021 <a href="https://www.instagram.com/its_me_alis_nasara/" target="_blank" class="text-body">Silambarasan_Elumalai</a> <br>All rights reserved</br> </p>
 
-  </footer>
-</div>
+
+    
+<main class="form-signin">
+  <form>
+    <img class="mb-4" src="../img/logo.jpg" alt="" width="92" height="89">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">User ID / Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy;2021<br> All Rights Reserved</p>
+  </form>
+</main>
 
 
     

@@ -20,6 +20,11 @@ body {
 .carousel-caption {
   bottom: 4rem;
   z-index: 10;
+  margin-top: ;
+    margin-bottom: ;
+    background: rgba(black, black, black, 0.88);
+    color: #162d44 !important;
+    text-shadow:0 .05rem .1rem rgba(253, 253, 253, 0.98);
 }
 
 /* Declare heights because of positioning of img element */
@@ -33,6 +38,14 @@ body {
   min-width: 100%;
   height: 32rem;
 }
+
+
+
+
+
+
+
+
 
 
 /* MARKETING CONTENT
@@ -97,14 +110,18 @@ body {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #000;
+  color: #fff;
   text-shadow: #000; 
-  background-color: #e38307 !important;
+  background-color: #162d44 !important;
   border-color: #000;
   backface-visibility: #040000;/* Prevent inheritance from `body` */
 }
 
 
+.btn-outline-dark{
+  color: #fff; 
+  border-color: #fff;
+}
 
 
 

@@ -20,6 +20,7 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+
 }
 
 /* Declare heights because of positioning of img element */
@@ -42,6 +43,7 @@ body {
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
+  color: #000;
 }
 .marketing h2 {
   font-weight: 400;
@@ -75,10 +77,11 @@ body {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
+
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 50px; 
   }
 }
 
